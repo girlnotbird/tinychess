@@ -1,0 +1,31 @@
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains
+.idea/*
+
+# Private Node Modules
+node_modules/*
+
+# Mac/OSX
+.DS_Store
+
+# Distribution / Packaging
+build/*
+dist/*
+downloads/*
+lib/*
+
+# Environments
+.env
+env/*
+ENV/*
+
+# Private Notes (not for git)
+_private/*
+_notes/*
