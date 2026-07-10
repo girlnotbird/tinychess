@@ -19,7 +19,7 @@
         "moduleResolution": "NodeNext",
         "moduleDetection": "force",
         "skipLibCheck": false,
-        "noEmit": true,
+        "noEmit": false,
         "paths": {
             "@/*": [
                 "./src/*"
