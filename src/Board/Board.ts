@@ -118,27 +118,37 @@ class BoardState {
 export class Board implements DomComponent {
     whiteColor: string;
     blackColor: string;
+
     root: HTMLDivElement;
     canvas: HTMLCanvasElement;
     promotionModal: PromotionModal;
+
     state: BoardState;
+
     cachedSVGs: Map<PieceID, SVGElement>;
     cachedImages: Map<PieceID, PieceImage>;
     imageLoadedFlags: Map<PieceID, boolean>;
+
     pieceIsHeld: boolean;
     pieceInHand: PiecePosition;
+
     whitesTurn: boolean;
+
     promotionPending: boolean;
     pieceToPromote: PiecePosition;
+
     whiteKingCanCastle: boolean;
     blackKingCanCastle: boolean;
     rookA1CanCastle: boolean;
     rookH1CanCastle: boolean;
     rookA8CanCastle: boolean;
     rookH8CanCastle: boolean;
+
     enPassantAvailable: boolean;
     enPassantTakeableSquare: PiecePosition;
+
     gameHasInsufficientMaterial: boolean;
+
 
     constructor() {
         this.whiteColor = "#f5f5f5"
