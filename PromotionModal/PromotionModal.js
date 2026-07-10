@@ -44,6 +44,18 @@ export class PromotionModal {
         this.root.style.display = "block";
         this.pieceToPromote = pieceToPromote;
         this.onPromotionDone = onPromotionDone;
+        const newQueen = document.createElement("button");
+        const newRook = document.createElement("button");
+        const newKnight = document.createElement("button");
+        const newBishop = document.createElement("button");
+        this.root.replaceChild(newQueen, this.queen);
+        this.root.replaceChild(newRook, this.rook);
+        this.root.replaceChild(newKnight, this.knight);
+        this.root.replaceChild(newBishop, this.bishop);
+        this.queen = newQueen;
+        this.rook = newRook;
+        this.knight = newKnight;
+        this.bishop = newBishop;
         this.queen.setAttribute("style", "height:" + this.buttonWidth.toString() + "px;width:" + this.buttonWidth.toString() + "px");
         this.rook.setAttribute("style", "height:" + this.buttonWidth.toString() + "px;width:" + this.buttonWidth.toString() + "px");
         this.knight.setAttribute("style", "height:" + this.buttonWidth.toString() + "px;width:" + this.buttonWidth.toString() + "px");
