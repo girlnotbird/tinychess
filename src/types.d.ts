@@ -1,3 +1,0 @@
-type DomComponent = {
-    elem(): HTMLElement;
-};

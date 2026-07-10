@@ -1,0 +1,15 @@
+button {
+    margin: 0;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 0;
+    background-color: beige;
+}
+
+button:hover {
+    background-color: rgb(from beige calc(r *.9) calc(g * .9) calc(b * .9));
+}
+
+button:active {
+    background-color: rgb(from beige calc(r *.8) calc(g * .8) calc(b * .8));
+}
